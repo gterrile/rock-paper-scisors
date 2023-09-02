@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scisors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <p>The rules: "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."</p>  
+  </div>
+
+  <!-- <div class="center">
+    <div class="container">
+      <div class="pieces">
+        <button class="player-button" id="player-paper">
+          <img src="images/Paper.jpg">
+        </button>
+      </div>
+      <div class="piece">  
+        <button class="player-button" id="player-scissors">
+          <img src="images/Scissors.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="player-rock">
+          <img src="images/Rock.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="player-lizard">
+          <img src="images/Lizard.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="player-spock">
+          <img src="images/Spock.jpg">
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pieces">
+        <button class="player-button" id="computer-paper">
+          <img src="images/Paper.jpg">
+        </button>
+      </div>
+      <div class="piece">  
+        <button class="player-button" id="computer-scissors">
+          <img src="images/Scissors.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="computer-rock">
+          <img src="images/Rock.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="computer-lizard">
+          <img src="images/Lizard.jpg">
+        </button>
+      </div>
+      <div class="piece">
+        <button class="player-button" id="computer-spock">
+          <img src="images/Spock.jpg">
+        </button>
+      </div>
+    </div>
+  </div> -->
+      
+      <div class="center">
+        <div class="player-column">
+          <input type="radio" name="player" id="player-paper" value="0" onchange="generateWinner()">
+          <label for="player-paper">Paper</label><br>
+          <input type="radio" name="player" id="player-rock" value="1" onchange="generateWinner()">
+          <label for="player-rock">Rock</label><br>
+          <input type="radio" name="player" id="player-scissors" value="2" onchange="generateWinner()">
+          <label for="player-scissors">Scissors</label><br>
+          <input type="radio" name="player" id="player-lizard" value="3" onchange="generateWinner()">
+          <label for="player-lizard">Lizard</label><br>
+          <input type="radio" name="player" id="player-spock" value="4" onchange="generateWinner()">
+          <label for="player-spock">Spock</label><br>
+        </div>
+  
+        <div class="computer-column">
+          <input type="radio" name="computer" id="computer-paper" value="0">
+          <label for="computer-paper">Paper</label><br>
+          <input type="radio" name="computer" id="computer-rock" value="1">
+          <label for="computer-rock">Rock</label><br>
+          <input type="radio" name="computer" id="computer-scissors" value="2">
+          <label for="computer-scissors">Scissors</label><br>
+          <input type="radio" name="computer" id="computer-lizard" value="3">
+          <label for="computer-lizard">Lizard</label><br>
+          <input type="radio" name="computer" id="computer-spock" value="4">
+          <label for="computer-spock">Spock</label><br>
+        </div>
+      </div>
+      <h1 id="winner-display"></h1>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
