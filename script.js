@@ -10,9 +10,11 @@ const computer_scissors = document.getElementById('computer-scissors');
 const computer_lizard = document.getElementById('computer-lizard');
 const computer_spock = document.getElementById("computer-spock");
 
+let player_score = 0;
+let computer_score = 0;
 
 function generateWinner() {
-  
+
   // Cleans h1 display winner
   document.getElementById('winner-display').textContent = ' ';
 
@@ -46,13 +48,18 @@ function generateWinner() {
   // Display winner
   for (i = 0; i < 10; i++) {
     if (player_choice == winners[i][0] && computer_choice == winners[i][1]) {
-      document.getElementById('winner-display').textContent = "Player 1 wins"
+      document.getElementById('winner-display').textContent = "Player 1 wins";
+      player_score += 1;
+      document.getElementById('player-score').textContent = player_score;
       break;
     }
     if (computer_choice == winners[i][0] && player_choice == winners[i][1]) {
-      document.getElementById('winner-display').textContent = "Computer wins"
+      document.getElementById('winner-display').textContent = "Computer wins";
+      computer_score += 1;
+      document.getElementById('computer-score').textContent = computer_score;
       break;
     }
   }
+
 
 }
